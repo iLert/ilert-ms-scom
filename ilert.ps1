@@ -107,7 +107,7 @@ $LogMtx.WaitOne() | Out-Null
 
 try {
     Invoke-RestMethod	-Method Post `
-    					-ContentType "application/json" `
+    					-ContentType "application/json; charset=utf-8" `
     					-Body $json `
     					-Uri $Url `
     					| Out-File $logEvents -Append
